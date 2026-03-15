@@ -1,0 +1,62 @@
+{
+  "orderId": "ORD-1773586754674",
+  "timestamp": "2026-03-15 21:59:14",
+  "cashier": "Niphas",
+  "totalAmount": 628.0,
+  "cashTendered": 700.0,
+  "change": 28.039999999999964,
+  "items": [
+    {
+      "productId": "P101",
+      "name": "Care Bears",
+      "pricePerUnit": 399.0,
+      "quantity": 1,
+      "subTotal": 399.0
+    },
+    {
+      "productId": "P201",
+      "name": "Moshi Pen",
+      "pricePerUnit": 20.0,
+      "quantity": 5,
+      "subTotal": 100.0
+    },
+    {
+      "productId": "P301",
+      "name": "Sunscreen",
+      "pricePerUnit": 129.0,
+      "quantity": 1,
+      "subTotal": 129.0
+    }
+  ]
+}
+{
+  "orderId": "ORD-1773587178668",
+  "timestamp": "2026-03-15 22:06:18",
+  "cashier": "Niphas",
+  "totalAmount": 548.0,
+  "cashTendered": 1000.0,
+  "change": 413.64,
+  "items": [
+    {
+      "productId": "P101",
+      "name": "Care Bears",
+      "pricePerUnit": 399.0,
+      "quantity": 1,
+      "subTotal": 399.0
+    },
+    {
+      "productId": "P201",
+      "name": "Moshi Pen",
+      "pricePerUnit": 20.0,
+      "quantity": 1,
+      "subTotal": 20.0
+    },
+    {
+      "productId": "P301",
+      "name": "Sunscreen",
+      "pricePerUnit": 129.0,
+      "quantity": 1,
+      "subTotal": 129.0
+    }
+  ]
+}
