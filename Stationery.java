@@ -10,6 +10,6 @@ public class Stationery extends Product {
 
     @Override
     public String getDetails() {
-        return name + " (Type: " + type + ", Color: " + color + ")";
+        return this.getName() + " (Type: " + type + ", Color: " + color + ")";
     }
 }

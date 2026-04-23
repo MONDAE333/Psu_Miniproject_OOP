@@ -1,6 +1,4 @@
 import java.util.List;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.util.ArrayList;
 
 public class Manager extends User {
@@ -17,25 +15,25 @@ public class Manager extends User {
 
     public void addProduct(List<Product> db, Product p) {
         db.add(p);
-        System.out.println("[Manager] Added Product: " + p.getName());
+        // ลบ System.out (ให้ Main จัดการ output)
     }
 
     public void editProduct(Product p, double newPrice) {
-        p.price = newPrice;
-        System.out.println("[Manager] Edited Price for " + p.getName() + " to " + newPrice);
+        p.setPrice(newPrice);
+        // ลบ System.out (ให้ Main จัดการ output)
     }
 
     public void deleteProduct(List<Product> db, Product p) {
         db.remove(p);
-        System.out.println("[Manager] Deleted Product: " + p.getName());
+        // ลบ System.out (ให้ Main จัดการ output)
     }
 
     public void manageDiscount(Discount d) {
-        System.out.println("[Manager] Discount " + d.getCode() + " managed successfully.");
+        // ลบ System.out (ให้ Main จัดการ output)
     }
 
     public void setPromotion(Discount d) {
-        System.out.println("[Manager] Promotion set for discount code: " + d.getCode());
+        // ลบ System.out (ให้ Main จัดการ output)
     }
 
     public void viewSales(String jsonFilePath) {
@@ -44,16 +42,24 @@ public class Manager extends User {
         System.out.println("=======================================================");
         
         try {
-            List<String> lines = Files.readAllLines(Paths.get(jsonFilePath));
+            java.util.List<String> lines = java.nio.file.Files.readAllLines(java.nio.file.Paths.get(jsonFilePath));
             boolean inItems = false;
-            double grandTotalAllOrders = 0.0; // เก็บยอดขายรวมทุกบิล
+            double grandTotalAllOrders = 0.0; 
+
+            // ตัวแปรพักข้อมูล
+            String tempTotal = "";
+            String tempCash = "";
+            String tempChange = "";
+            String tempDiscount = ""; // [เพิ่ม] เก็บส่วนลด
+            String tempVat = "";      // [เพิ่ม] เก็บภาษี
 
             for (String line : lines) {
-                line = line.trim(); // ตัดช่องว่างหัวท้ายออก
+                line = line.trim(); 
                 
-                // --- ส่วนข้อมูลทั่วไปของบิล ---
                 if (line.startsWith("\"orderId\":")) {
                     System.out.println("\n[ ใบเสร็จรับเงิน: " + extractValue(line) + " ]");
+                    // รีเซ็ตค่าทุกครั้งที่ขึ้นบิลใหม่
+                    tempTotal = ""; tempCash = ""; tempChange = ""; tempDiscount = ""; tempVat = "";
                 } 
                 else if (line.startsWith("\"timestamp\":")) {
                     System.out.println("เวลา: " + extractValue(line));
@@ -62,13 +68,29 @@ public class Manager extends User {
                     System.out.println("พนักงานขาย: " + extractValue(line));
                 } 
                 
+                // --- ดึงข้อมูลที่เพิ่งเพิ่มเข้ามาใหม่จาก JSON ---
+                else if (line.startsWith("\"discount\":")) {
+                    tempDiscount = extractValue(line);
+                }
+                else if (line.startsWith("\"vatAmount\":")) {
+                    tempVat = extractValue(line);
+                }
+                else if (line.startsWith("\"totalAmount\":")) {
+                    tempTotal = extractValue(line);
+                    grandTotalAllOrders += Double.parseDouble(tempTotal);
+                } 
+                else if (line.startsWith("\"cashTendered\":")) {
+                    tempCash = extractValue(line);
+                } 
+                else if (line.startsWith("\"change\":")) {
+                    tempChange = extractValue(line);
+                } 
+                
                 // --- ส่วนเปิดรายการสินค้า ---
                 else if (line.startsWith("\"items\":")) {
                     System.out.println("รายการสินค้า:");
-                    inItems = true; // เปิดโหมดอ่านสินค้า
+                    inItems = true; 
                 } 
-                
-                // --- ส่วนอ่านรายละเอียดสินค้าในลูป ---
                 else if (inItems) {
                     if (line.startsWith("\"name\":")) {
                         System.out.print("  - " + extractValue(line));
@@ -78,28 +100,31 @@ public class Manager extends User {
                         System.out.print("x" + extractValue(line));
                     } else if (line.startsWith("\"subTotal\":")) {
                         System.out.println(" = " + extractValue(line) + " THB");
-                    } else if (line.equals("]")) { // จบ Array ของ items
-                        inItems = false; // ปิดโหมดอ่านสินค้า
-                    }
-                } 
-                
-                // --- ส่วนสรุปยอดเงิน (จะอยู่นอกโหมด inItems) ---
-                else if (!inItems) {
-                    if (line.startsWith("\"totalAmount\":")) {
-                        double total = Double.parseDouble(extractValue(line));
-                        grandTotalAllOrders += total; // บวกเข้ายอดรวมทั้งหมดของร้าน
+                    } 
+                    else if (line.startsWith("]")) { 
+                        inItems = false; 
+                        
                         System.out.println("-----------------------------------");
-                        System.out.println(String.format("ยอดรวมบิลนี้: %.2f THB", total));
-                    } else if (line.startsWith("\"cashTendered\":")) {
-                        System.out.println(String.format("รับเงินมา: %.2f THB", Double.parseDouble(extractValue(line))));
-                    } else if (line.startsWith("\"change\":")) {
-                        System.out.println(String.format("เงินทอน: %.2f THB", Double.parseDouble(extractValue(line))));
+                        
+                        // [แก้ไข] นำข้อมูล VAT และ Discount มา Print ก่อนยอดรวม
+                        if (!tempDiscount.isEmpty() && Double.parseDouble(tempDiscount) > 0) {
+                            System.out.println(String.format("ส่วนลด (Discount): %.2f THB", Double.parseDouble(tempDiscount)));
+                        }
+                        if (!tempVat.isEmpty()) {
+                            System.out.println(String.format("ภาษี (VAT 7%%): %.2f THB", Double.parseDouble(tempVat)));
+                        }
+                        if (!tempTotal.isEmpty()) {
+                            System.out.println(String.format("ยอดรวมสุทธิ (Grand Total): %.2f THB", Double.parseDouble(tempTotal)));
+                        }
+                        
+                        System.out.println("-----------------------------------");
+                        if (!tempCash.isEmpty())  System.out.println(String.format("รับเงินมา: %.2f THB", Double.parseDouble(tempCash)));
+                        if (!tempChange.isEmpty()) System.out.println(String.format("เงินทอน: %.2f THB", Double.parseDouble(tempChange)));
                         System.out.println("=======================================================");
                     }
-                }
+                } 
             }
             
-            // สรุปยอดขายรวมทั้งหมดตอนท้าย
             System.out.println("\n>>> ยอดขายรวมทั้งหมด (Total Revenue): " + String.format("%.2f", grandTotalAllOrders) + " THB <<<");
             
         } catch (Exception e) {
@@ -139,23 +164,22 @@ public class Manager extends User {
     }
 
     public void manageStock(Product p, int amountToAdd) {
-        // แก้ไขให้บวกเพิ่มอย่างเดียวตาม Requirement ถ้าจะลดค่อยทำเมนูใหม่
         if (amountToAdd < 0) {
-            System.out.println("[Error] การเพิ่มสต็อกต้องเป็นค่าบวกเท่านั้น");
+            // Error: must be positive value - ให้ Main จัดการ output
             return;
         }
         p.updateStock(amountToAdd);
-        System.out.println("[Manager] อัปเดตสต็อกเรียบร้อย ยอดคงเหลือของ " + p.getName() + " คือ " + p.stockQuantity);
+        // ลบ System.out (ให้ Main จัดการ output)
     }
 
     public void addCashier(List<User> userDb, Cashier c) {
         userDb.add(c);
-        System.out.println("[Manager] Added new Cashier: " + c.getFirstName());
+        // ลบ System.out (ให้ Main จัดการ output)
     }
 
     public void approveVoid(Order order) {
         order.cancelOrder();
-        System.out.println("[Manager] Approved VOID for Order ID: " + order.getOrderId());
+        // ลบ System.out (ให้ Main จัดการ output)
     }
 
     public List<Product> searchProduct(String keyword, List<Product> db) {
@@ -168,10 +192,14 @@ public class Manager extends User {
         return results;
     }
 
-    public void generateInventoryReport(List<Product> db) {
-        System.out.println("\n--- [ INVENTORY REPORT ] ---");
+    public String generateInventoryReport(List<Product> db) {
+        StringBuilder report = new StringBuilder();
+        report.append("\n--- [ INVENTORY REPORT ] ---\n");
         for (Product p : db) {
-            System.out.println(p.getProductId() + " | " + p.getName() + " | Stock: " + p.stockQuantity + " | Active: " + p.isActive());
+            report.append(p.getProductId()).append(" | ").append(p.getName())
+                   .append(" | Stock: ").append(p.getStockQuantity()).append(" | Active: ").append(p.isActive())
+                   .append("\n");
         }
+        return report.toString();
     }
 }

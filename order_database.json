@@ -1,10 +1,10 @@
 {
-  "orderId": "ORD-1773586754674",
-  "timestamp": "2026-03-15 21:59:14",
+  "orderId": "ORD-1773594737818",
+  "timestamp": "2026-03-16 00:12:17",
   "cashier": "Niphas",
-  "totalAmount": 628.0,
-  "cashTendered": 700.0,
-  "change": 28.039999999999964,
+  "totalAmount": 419.0,
+  "cashTendered": 500.0,
+  "change": 51.670000000000016,
   "items": [
     {
       "productId": "P101",
@@ -17,8 +17,289 @@
       "productId": "P201",
       "name": "Moshi Pen",
       "pricePerUnit": 20.0,
+      "quantity": 1,
+      "subTotal": 20.0
+    }
+  ]
+}
+{
+  "orderId": "ORD-1773597867892",
+  "timestamp": "2026-03-16 01:04:27",
+  "cashier": "Niphas",
+  "totalAmount": 414.0,
+  "cashTendered": 1000.0,
+  "change": 557.02,
+  "items": [
+    {
+      "productId": "P202",
+      "name": "ปากกาหมึกซึม 0.5",
+      "pricePerUnit": 15.0,
+      "quantity": 1,
+      "subTotal": 15.0
+    },
+    {
+      "productId": "P101",
+      "name": "Care Bears",
+      "pricePerUnit": 399.0,
+      "quantity": 1,
+      "subTotal": 399.0
+    }
+  ]
+}
+{
+  "orderId": "ORD-1773600615770",
+  "timestamp": "2026-03-16 01:50:15",
+  "cashier": "Niphas",
+  "totalAmount": 2035.0,
+  "cashTendered": 3000.0,
+  "change": 822.5500000000002,
+  "items": [
+    {
+      "productId": "P101",
+      "name": "Care Bears",
+      "pricePerUnit": 399.0,
       "quantity": 5,
-      "subTotal": 100.0
+      "subTotal": 1995.0
+    },
+    {
+      "productId": "P201",
+      "name": "Moshi Pen",
+      "pricePerUnit": 20.0,
+      "quantity": 2,
+      "subTotal": 40.0
+    }
+  ]
+}
+{
+  "orderId": "ORD-1773600829443",
+  "timestamp": "2026-03-16 01:53:49",
+  "cashier": "Niphas",
+  "totalAmount": 958.0,
+  "cashTendered": 1100.0,
+  "change": 74.94000000000005,
+  "items": [
+    {
+      "productId": "P101",
+      "name": "Care Bears",
+      "pricePerUnit": 399.0,
+      "quantity": 1,
+      "subTotal": 399.0
+    },
+    {
+      "productId": "P102",
+      "name": "ไดโนเสาร์นอน สีเขียวเข้ม",
+      "pricePerUnit": 240.0,
+      "quantity": 1,
+      "subTotal": 240.0
+    },
+    {
+      "productId": "P201",
+      "name": "Moshi Pen",
+      "pricePerUnit": 20.0,
+      "quantity": 1,
+      "subTotal": 20.0
+    },
+    {
+      "productId": "P202",
+      "name": "ปากกาหมึกซึม 0.5",
+      "pricePerUnit": 20.0,
+      "quantity": 1,
+      "subTotal": 20.0
+    },
+    {
+      "productId": "P301",
+      "name": "Sunscreen",
+      "pricePerUnit": 129.0,
+      "quantity": 1,
+      "subTotal": 129.0
+    },
+    {
+      "productId": "P302",
+      "name": "Eyecream",
+      "pricePerUnit": 150.0,
+      "quantity": 1,
+      "subTotal": 150.0
+    },
+    {
+      "productId": "P303",
+      "name": "Sarum Cream",
+      "pricePerUnit": 0.0,
+      "quantity": 1,
+      "subTotal": 0.0
+    }
+  ]
+}
+{
+  "orderId": "ORD-1773601426564",
+  "timestamp": "2026-03-16 02:03:46",
+  "cashier": "Niphas",
+  "totalAmount": 639.0,
+  "cashTendered": 1000.0,
+  "change": 316.27,
+  "items": [
+    {
+      "productId": "P101",
+      "name": "Care Bears",
+      "pricePerUnit": 399.0,
+      "quantity": 1,
+      "subTotal": 399.0
+    },
+    {
+      "productId": "P102",
+      "name": "ไดโนเสาร์นอน สีเขียวเข้ม",
+      "pricePerUnit": 240.0,
+      "quantity": 1,
+      "subTotal": 240.0
+    }
+  ]
+}
+{
+  "orderId": "ORD-1773601606582",
+  "timestamp": "2026-03-16 02:06:46",
+  "cashier": "Niphas",
+  "totalAmount": 639.0,
+  "cashTendered": 1000.0,
+  "change": 316.27,
+  "items": [
+    {
+      "productId": "P101",
+      "name": "Care Bears",
+      "pricePerUnit": 399.0,
+      "quantity": 1,
+      "subTotal": 399.0
+    },
+    {
+      "productId": "P102",
+      "name": "ไดโนเสาร์นอน สีเขียวเข้ม",
+      "pricePerUnit": 240.0,
+      "quantity": 1,
+      "subTotal": 240.0
+    }
+  ]
+}
+{
+  "orderId": "ORD-1773601887852",
+  "timestamp": "2026-03-16 02:11:27",
+  "cashier": "Niphas",
+  "totalAmount": 419.0,
+  "cashTendered": 500.0,
+  "change": 51.670000000000016,
+  "items": [
+    {
+      "productId": "P101",
+      "name": "Care Bears",
+      "pricePerUnit": 399.0,
+      "quantity": 1,
+      "subTotal": 399.0
+    },
+    {
+      "productId": "P201",
+      "name": "Moshi Pen",
+      "pricePerUnit": 20.0,
+      "quantity": 1,
+      "subTotal": 20.0
+    }
+  ]
+}
+{
+  "orderId": "ORD-1773601982318",
+  "timestamp": "2026-03-16 02:13:02",
+  "cashier": "Niphas",
+  "totalAmount": 399.0,
+  "cashTendered": 500.0,
+  "change": 73.07,
+  "items": [
+    {
+      "productId": "P101",
+      "name": "Care Bears",
+      "pricePerUnit": 399.0,
+      "quantity": 1,
+      "subTotal": 399.0
+    }
+  ]
+}
+{
+  "orderId": "ORD-1773602084292",
+  "timestamp": "2026-03-16 02:14:44",
+  "cashier": "Niphas",
+  "totalAmount": 399.0,
+  "cashTendered": 500.0,
+  "change": 73.07,
+  "items": [
+    {
+      "productId": "P101",
+      "name": "Care Bears",
+      "pricePerUnit": 399.0,
+      "quantity": 1,
+      "subTotal": 399.0
+    }
+  ]
+}
+{
+  "orderId": "ORD-1773602146333",
+  "timestamp": "2026-03-16 02:15:46",
+  "cashier": "Niphas",
+  "totalAmount": 20.0,
+  "cashTendered": 40.0,
+  "change": 18.6,
+  "items": [
+    {
+      "productId": "P201",
+      "name": "Moshi Pen",
+      "pricePerUnit": 20.0,
+      "quantity": 1,
+      "subTotal": 20.0
+    }
+  ]
+}
+{
+  "orderId": "ORD-1773602414541",
+  "timestamp": "2026-03-16 02:20:14",
+  "cashier": "Niphas",
+  "totalAmount": 20.0,
+  "cashTendered": 21.4,
+  "change": 0.0,
+  "items": [
+    {
+      "productId": "P201",
+      "name": "Moshi Pen",
+      "pricePerUnit": 20.0,
+      "quantity": 1,
+      "subTotal": 20.0
+    }
+  ]
+}
+{
+  "orderId": "ORD-1773602617049",
+  "timestamp": "2026-03-16 02:23:37",
+  "cashier": "Niphas",
+  "totalAmount": 20.0,
+  "cashTendered": 21.4,
+  "change": 0.0,
+  "items": [
+    {
+      "productId": "P201",
+      "name": "Moshi Pen",
+      "pricePerUnit": 20.0,
+      "quantity": 1,
+      "subTotal": 20.0
+    }
+  ]
+}
+{
+  "orderId": "ORD-1773602789963",
+  "timestamp": "2026-03-16 02:26:29",
+  "cashier": "Niphas",
+  "totalAmount": 149.0,
+  "cashTendered": 159.43,
+  "change": 0.0,
+  "items": [
+    {
+      "productId": "P201",
+      "name": "Moshi Pen",
+      "pricePerUnit": 20.0,
+      "quantity": 1,
+      "subTotal": 20.0
     },
     {
       "productId": "P301",
@@ -30,12 +311,12 @@
   ]
 }
 {
-  "orderId": "ORD-1773587178668",
-  "timestamp": "2026-03-15 22:06:18",
+  "orderId": "ORD-1773925596085",
+  "timestamp": "2026-03-19 20:06:36",
   "cashier": "Niphas",
-  "totalAmount": 548.0,
-  "cashTendered": 1000.0,
-  "change": 413.64,
+  "totalAmount": 788.0,
+  "cashTendered": 900.0,
+  "change": 56.84000000000003,
   "items": [
     {
       "productId": "P101",
@@ -43,6 +324,894 @@
       "pricePerUnit": 399.0,
       "quantity": 1,
       "subTotal": 399.0
+    },
+    {
+      "productId": "P202",
+      "name": "ปากกาหมึกซึม 0.5",
+      "pricePerUnit": 20.0,
+      "quantity": 1,
+      "subTotal": 20.0
+    },
+    {
+      "productId": "P102",
+      "name": "ไดโนเสาร์นอน สีเขียวเข้ม",
+      "pricePerUnit": 240.0,
+      "quantity": 1,
+      "subTotal": 240.0
+    },
+    {
+      "productId": "P301",
+      "name": "Sunscreen",
+      "pricePerUnit": 129.0,
+      "quantity": 1,
+      "subTotal": 129.0
+    }
+  ]
+}
+{
+  "orderId": "ORD-1773926755414",
+  "timestamp": "2026-03-19 20:25:55",
+  "cashier": "Niphas",
+  "totalAmount": 788.0,
+  "cashTendered": 900.0,
+  "change": 56.84000000000003,
+  "items": [
+    {
+      "productId": "P101",
+      "name": "Care Bears",
+      "pricePerUnit": 399.0,
+      "quantity": 1,
+      "subTotal": 399.0
+    },
+    {
+      "productId": "P201",
+      "name": "Moshi Pen",
+      "pricePerUnit": 20.0,
+      "quantity": 1,
+      "subTotal": 20.0
+    },
+    {
+      "productId": "P301",
+      "name": "Sunscreen",
+      "pricePerUnit": 129.0,
+      "quantity": 1,
+      "subTotal": 129.0
+    },
+    {
+      "productId": "P102",
+      "name": "ไดโนเสาร์นอน สีเขียวเข้ม",
+      "pricePerUnit": 240.0,
+      "quantity": 1,
+      "subTotal": 240.0
+    }
+  ]
+}
+{
+  "orderId": "ORD-1773927436635",
+  "timestamp": "2026-03-19 20:37:16",
+  "cashier": "Niphas",
+  "totalAmount": 937.0,
+  "cashTendered": 1003.0,
+  "change": 0.40999999999996817,
+  "items": [
+    {
+      "productId": "P101",
+      "name": "Care Bears",
+      "pricePerUnit": 399.0,
+      "quantity": 1,
+      "subTotal": 399.0
+    },
+    {
+      "productId": "P102",
+      "name": "ไดโนเสาร์นอน สีเขียวเข้ม",
+      "pricePerUnit": 240.0,
+      "quantity": 1,
+      "subTotal": 240.0
+    },
+    {
+      "productId": "P201",
+      "name": "Moshi Pen",
+      "pricePerUnit": 20.0,
+      "quantity": 1,
+      "subTotal": 20.0
+    },
+    {
+      "productId": "P201",
+      "name": "Moshi Pen",
+      "pricePerUnit": 20.0,
+      "quantity": 1,
+      "subTotal": 20.0
+    },
+    {
+      "productId": "P301",
+      "name": "Sunscreen",
+      "pricePerUnit": 129.0,
+      "quantity": 1,
+      "subTotal": 129.0
+    },
+    {
+      "productId": "P301",
+      "name": "Sunscreen",
+      "pricePerUnit": 129.0,
+      "quantity": 1,
+      "subTotal": 129.0
+    }
+  ]
+}
+{
+  "orderId": "ORD-1773927631496",
+  "timestamp": "2026-03-19 20:40:31",
+  "cashier": "Niphas",
+  "totalAmount": 697.0,
+  "cashTendered": 1000.0,
+  "change": 254.21000000000004,
+  "items": [
+    {
+      "productId": "P101",
+      "name": "Care Bears",
+      "pricePerUnit": 399.0,
+      "quantity": 1,
+      "subTotal": 399.0
+    },
+    {
+      "productId": "P201",
+      "name": "Moshi Pen",
+      "pricePerUnit": 20.0,
+      "quantity": 1,
+      "subTotal": 20.0
+    },
+    {
+      "productId": "P201",
+      "name": "Moshi Pen",
+      "pricePerUnit": 20.0,
+      "quantity": 1,
+      "subTotal": 20.0
+    },
+    {
+      "productId": "P301",
+      "name": "Sunscreen",
+      "pricePerUnit": 129.0,
+      "quantity": 1,
+      "subTotal": 129.0
+    },
+    {
+      "productId": "P301",
+      "name": "Sunscreen",
+      "pricePerUnit": 129.0,
+      "quantity": 1,
+      "subTotal": 129.0
+    }
+  ]
+}
+{
+  "orderId": "ORD-1773927707528",
+  "timestamp": "2026-03-19 20:41:47",
+  "cashier": "Niphas",
+  "totalAmount": 1096.0,
+  "cashTendered": 1200.0,
+  "change": 27.279999999999973,
+  "items": [
+    {
+      "productId": "P101",
+      "name": "Care Bears",
+      "pricePerUnit": 399.0,
+      "quantity": 1,
+      "subTotal": 399.0
+    },
+    {
+      "productId": "P101",
+      "name": "Care Bears",
+      "pricePerUnit": 399.0,
+      "quantity": 1,
+      "subTotal": 399.0
+    },
+    {
+      "productId": "P201",
+      "name": "Moshi Pen",
+      "pricePerUnit": 20.0,
+      "quantity": 1,
+      "subTotal": 20.0
+    },
+    {
+      "productId": "P201",
+      "name": "Moshi Pen",
+      "pricePerUnit": 20.0,
+      "quantity": 1,
+      "subTotal": 20.0
+    },
+    {
+      "productId": "P301",
+      "name": "Sunscreen",
+      "pricePerUnit": 129.0,
+      "quantity": 1,
+      "subTotal": 129.0
+    },
+    {
+      "productId": "P301",
+      "name": "Sunscreen",
+      "pricePerUnit": 129.0,
+      "quantity": 1,
+      "subTotal": 129.0
+    }
+  ]
+}
+{
+  "orderId": "ORD-1773928135631",
+  "timestamp": "2026-03-19 20:48:55",
+  "cashier": "Niphas",
+  "totalAmount": 1076.0,
+  "cashTendered": 1200.0,
+  "change": 48.680000000000064,
+  "items": [
+    {
+      "productId": "P101",
+      "name": "Care Bears",
+      "pricePerUnit": 399.0,
+      "quantity": 2,
+      "subTotal": 798.0
+    },
+    {
+      "productId": "P201",
+      "name": "Moshi Pen",
+      "pricePerUnit": 20.0,
+      "quantity": 1,
+      "subTotal": 20.0
+    },
+    {
+      "productId": "P301",
+      "name": "Sunscreen",
+      "pricePerUnit": 129.0,
+      "quantity": 2,
+      "subTotal": 258.0
+    }
+  ]
+}
+{
+  "orderId": "ORD-1773938455171",
+  "timestamp": "2026-03-19 23:40:55",
+  "cashier": "Niphas",
+  "subTotal": "519.00",
+  "discount": "0.00",
+  "vatAmount": "36.33",
+  "totalAmount": "555.33",
+  "cashTendered": "600.00",
+  "change": "44.67",
+  "items": [
+    {
+      "productId": "P302",
+      "name": "Eyecream",
+      "pricePerUnit": 100.0,
+      "quantity": 1,
+      "subTotal": 100.0
+    },
+    {
+      "productId": "P101",
+      "name": "Care Bears",
+      "pricePerUnit": 399.0,
+      "quantity": 1,
+      "subTotal": 399.0
+    },
+    {
+      "productId": "P201",
+      "name": "Moshi Pen",
+      "pricePerUnit": 20.0,
+      "quantity": 1,
+      "subTotal": 20.0
+    }
+  ]
+}
+{
+  "orderId": "ORD-1773988552655",
+  "timestamp": "2026-03-20 13:35:52",
+  "cashier": "Niphas",
+  "subTotal": "1543.00",
+  "discount": "0.00",
+  "vatAmount": "100.94",
+  "totalAmount": "1543.00",
+  "cashTendered": "2000.00",
+  "change": "457.00",
+  "items": [
+    {
+      "productId": "P101",
+      "name": "Care Bears",
+      "pricePerUnit": 399.0,
+      "quantity": 1,
+      "subTotal": 399.0
+    },
+    {
+      "productId": "P201",
+      "name": "Moshi Pen",
+      "pricePerUnit": 20.0,
+      "quantity": 1,
+      "subTotal": 20.0
+    },
+    {
+      "productId": "P301",
+      "name": "Sunscreen",
+      "pricePerUnit": 129.0,
+      "quantity": 1,
+      "subTotal": 129.0
+    },
+    {
+      "productId": "P302",
+      "name": "Eyecream",
+      "pricePerUnit": 199.0,
+      "quantity": 5,
+      "subTotal": 995.0
+    }
+  ]
+}
+{
+  "orderId": "ORD-1773989491250",
+  "timestamp": "2026-03-20 13:51:31",
+  "cashier": "Niphas",
+  "subTotal": "1020.00",
+  "discount": "102.00",
+  "vatAmount": "60.06",
+  "totalAmount": "918.00",
+  "cashTendered": "1000.00",
+  "change": "82.00",
+  "items": [
+    {
+      "productId": "P102",
+      "name": "ไดโนเสาร์นอน สีเขียวเข้ม",
+      "pricePerUnit": 220.0,
+      "quantity": 4,
+      "subTotal": 880.0
+    },
+    {
+      "productId": "P201",
+      "name": "Moshi Pen",
+      "pricePerUnit": 20.0,
+      "quantity": 7,
+      "subTotal": 140.0
+    }
+  ]
+}
+{
+  "orderId": "ORD-1774022876787",
+  "timestamp": "2026-03-20 23:07:56",
+  "cashier": "Niphas",
+  "subTotal": "20.00",
+  "discount": "0.00",
+  "vatAmount": "1.31",
+  "totalAmount": "20.00",
+  "cashTendered": "20.00",
+  "change": "0.00",
+  "items": [
+    {
+      "productId": "P201",
+      "name": "Moshi Pen",
+      "pricePerUnit": 20.0,
+      "quantity": 1,
+      "subTotal": 20.0
+    }
+  ]
+}
+{
+  "orderId": "ORD-1774023157900",
+  "timestamp": "2026-03-20 23:12:37",
+  "cashier": "Niphas",
+  "subTotal": "548.00",
+  "discount": "0.00",
+  "vatAmount": "35.85",
+  "totalAmount": "548.00",
+  "cashTendered": "600.00",
+  "change": "52.00",
+  "items": [
+    {
+      "productId": "P101",
+      "name": "Care Bears",
+      "pricePerUnit": 399.0,
+      "quantity": 1,
+      "subTotal": 399.0
+    },
+    {
+      "productId": "P201",
+      "name": "Moshi Pen",
+      "pricePerUnit": 20.0,
+      "quantity": 1,
+      "subTotal": 20.0
+    },
+    {
+      "productId": "P301",
+      "name": "Sunscreen",
+      "pricePerUnit": 129.0,
+      "quantity": 1,
+      "subTotal": 129.0
+    }
+  ]
+}
+{
+  "orderId": "ORD-1774023545246",
+  "timestamp": "2026-03-20 23:19:05",
+  "cashier": "Niphas",
+  "subTotal": "748.00",
+  "discount": "0.00",
+  "vatAmount": "48.93",
+  "totalAmount": "748.00",
+  "cashTendered": "800.00",
+  "change": "52.00",
+  "items": [
+    {
+      "productId": "P301",
+      "name": "Sunscreen",
+      "pricePerUnit": 129.0,
+      "quantity": 1,
+      "subTotal": 129.0
+    },
+    {
+      "productId": "P102",
+      "name": "ไดโนเสาร์นอน สีเขียวเข้ม",
+      "pricePerUnit": 220.0,
+      "quantity": 1,
+      "subTotal": 220.0
+    },
+    {
+      "productId": "P101",
+      "name": "Care Bears",
+      "pricePerUnit": 399.0,
+      "quantity": 1,
+      "subTotal": 399.0
+    }
+  ]
+}
+{
+  "orderId": "ORD-1774023735879",
+  "timestamp": "2026-03-20 23:22:15",
+  "cashier": "Niphas",
+  "subTotal": "818.00",
+  "discount": "0.00",
+  "vatAmount": "53.51",
+  "totalAmount": "818.00",
+  "cashTendered": "900.00",
+  "change": "82.00",
+  "items": [
+    {
+      "productId": "P101",
+      "name": "Care Bears",
+      "pricePerUnit": 399.0,
+      "quantity": 1,
+      "subTotal": 399.0
+    },
+    {
+      "productId": "P102",
+      "name": "ไดโนเสาร์นอน สีเขียวเข้ม",
+      "pricePerUnit": 220.0,
+      "quantity": 1,
+      "subTotal": 220.0
+    },
+    {
+      "productId": "P302",
+      "name": "Eyecream",
+      "pricePerUnit": 199.0,
+      "quantity": 1,
+      "subTotal": 199.0
+    }
+  ]
+}
+{
+  "orderId": "ORD-1774023819703",
+  "timestamp": "2026-03-20 23:23:39",
+  "cashier": "Niphas",
+  "subTotal": "619.00",
+  "discount": "0.00",
+  "vatAmount": "40.50",
+  "totalAmount": "619.00",
+  "cashTendered": "1000.00",
+  "change": "381.00",
+  "items": [
+    {
+      "productId": "P101",
+      "name": "Care Bears",
+      "pricePerUnit": 399.0,
+      "quantity": 1,
+      "subTotal": 399.0
+    },
+    {
+      "productId": "P102",
+      "name": "ไดโนเสาร์นอน สีเขียวเข้ม",
+      "pricePerUnit": 220.0,
+      "quantity": 1,
+      "subTotal": 220.0
+    }
+  ]
+}
+{
+  "orderId": "ORD-1774023877179",
+  "timestamp": "2026-03-20 23:24:37",
+  "cashier": "Niphas",
+  "subTotal": "639.00",
+  "discount": "0.00",
+  "vatAmount": "41.80",
+  "totalAmount": "639.00",
+  "cashTendered": "1000.00",
+  "change": "361.00",
+  "items": [
+    {
+      "productId": "P101",
+      "name": "Care Bears",
+      "pricePerUnit": 399.0,
+      "quantity": 1,
+      "subTotal": 399.0
+    },
+    {
+      "productId": "P202",
+      "name": "ปากกาหมึกซึม 0.5",
+      "pricePerUnit": 20.0,
+      "quantity": 1,
+      "subTotal": 20.0
+    },
+    {
+      "productId": "P102",
+      "name": "ไดโนเสาร์นอน สีเขียวเข้ม",
+      "pricePerUnit": 220.0,
+      "quantity": 1,
+      "subTotal": 220.0
+    }
+  ]
+}
+{
+  "orderId": "ORD-1774024177943",
+  "timestamp": "2026-03-20 23:29:37",
+  "cashier": "Niphas",
+  "subTotal": "619.00",
+  "discount": "0.00",
+  "vatAmount": "40.50",
+  "totalAmount": "619.00",
+  "cashTendered": "1000.00",
+  "change": "381.00",
+  "items": [
+    {
+      "productId": "P102",
+      "name": "ไดโนเสาร์นอน สีเขียวเข้ม",
+      "pricePerUnit": 220.0,
+      "quantity": 1,
+      "subTotal": 220.0
+    },
+    {
+      "productId": "P101",
+      "name": "Care Bears",
+      "pricePerUnit": 399.0,
+      "quantity": 1,
+      "subTotal": 399.0
+    }
+  ]
+}
+{
+  "orderId": "ORD-1774025071135",
+  "timestamp": "2026-03-20 23:44:31",
+  "cashier": "Niphas",
+  "subTotal": "1500.00",
+  "discount": "150.00",
+  "vatAmount": "88.32",
+  "totalAmount": "1350.00",
+  "cashTendered": "1350.00",
+  "change": "0.00",
+  "items": [
+    {
+      "productId": "P303",
+      "name": "Nam",
+      "pricePerUnit": 150.0,
+      "quantity": 10,
+      "subTotal": 1500.0
+    }
+  ]
+}
+{
+  "orderId": "ORD-1774025101194",
+  "timestamp": "2026-03-20 23:45:01",
+  "cashier": "Niphas",
+  "subTotal": "1018.00",
+  "discount": "101.80",
+  "vatAmount": "59.94",
+  "totalAmount": "916.20",
+  "cashTendered": "1000.00",
+  "change": "83.80",
+  "items": [
+    {
+      "productId": "P101",
+      "name": "Care Bears",
+      "pricePerUnit": 399.0,
+      "quantity": 2,
+      "subTotal": 798.0
+    },
+    {
+      "productId": "P102",
+      "name": "ไดโนเสาร์นอน สีเขียวเข้ม",
+      "pricePerUnit": 220.0,
+      "quantity": 1,
+      "subTotal": 220.0
+    }
+  ]
+}
+{
+  "orderId": "ORD-1774025207192",
+  "timestamp": "2026-03-20 23:46:47",
+  "cashier": "Niphas",
+  "subTotal": "697.00",
+  "discount": "0.00",
+  "vatAmount": "45.60",
+  "totalAmount": "697.00",
+  "cashTendered": "800.00",
+  "change": "103.00",
+  "items": [
+    {
+      "productId": "P202",
+      "name": "ปากกาหมึกซึม 0.5",
+      "pricePerUnit": 20.0,
+      "quantity": 5,
+      "subTotal": 100.0
+    },
+    {
+      "productId": "P302",
+      "name": "Eyecream",
+      "pricePerUnit": 199.0,
+      "quantity": 3,
+      "subTotal": 597.0
+    }
+  ]
+}
+{
+  "orderId": "ORD-1774025385501",
+  "timestamp": "2026-03-20 23:49:45",
+  "cashier": "Niphas",
+  "subTotal": "100.00",
+  "discount": "0.00",
+  "vatAmount": "6.54",
+  "totalAmount": "100.00",
+  "cashTendered": "100.00",
+  "change": "0.00",
+  "items": [
+    {
+      "productId": "P202",
+      "name": "ปากกาหมึกซึม 0.5",
+      "pricePerUnit": 20.0,
+      "quantity": 5,
+      "subTotal": 100.0
+    }
+  ]
+}
+{
+  "orderId": "ORD-1774025866366",
+  "timestamp": "2026-03-20 23:57:46",
+  "cashier": "Niphas",
+  "subTotal": "7500.00",
+  "discount": "750.00",
+  "vatAmount": "441.59",
+  "totalAmount": "6750.00",
+  "cashTendered": "10000.00",
+  "change": "3250.00",
+  "items": [
+    {
+      "productId": "P103",
+      "name": "sada",
+      "pricePerUnit": 150.0,
+      "quantity": 50,
+      "subTotal": 7500.0
+    }
+  ]
+}
+{
+  "orderId": "ORD-1774025934509",
+  "timestamp": "2026-03-20 23:58:54",
+  "cashier": "Niphas",
+  "subTotal": "2365.00",
+  "discount": "236.50",
+  "vatAmount": "139.25",
+  "totalAmount": "2128.50",
+  "cashTendered": "3000.00",
+  "change": "871.50",
+  "items": [
+    {
+      "productId": "P102",
+      "name": "ไดโนเสาร์นอน สีเขียวเข้ม",
+      "pricePerUnit": 220.0,
+      "quantity": 1,
+      "subTotal": 220.0
+    },
+    {
+      "productId": "P103",
+      "name": "sada",
+      "pricePerUnit": 150.0,
+      "quantity": 1,
+      "subTotal": 150.0
+    },
+    {
+      "productId": "P101",
+      "name": "Care Bears",
+      "pricePerUnit": 399.0,
+      "quantity": 5,
+      "subTotal": 1995.0
+    }
+  ]
+}
+{
+  "orderId": "ORD-1774025989420",
+  "timestamp": "2026-03-20 23:59:49",
+  "cashier": "Niphas",
+  "subTotal": "789.00",
+  "discount": "0.00",
+  "vatAmount": "51.62",
+  "totalAmount": "789.00",
+  "cashTendered": "1000.00",
+  "change": "211.00",
+  "items": [
+    {
+      "productId": "P101",
+      "name": "Care Bears",
+      "pricePerUnit": 399.0,
+      "quantity": 1,
+      "subTotal": 399.0
+    },
+    {
+      "productId": "P201",
+      "name": "Moshi Pen",
+      "pricePerUnit": 20.0,
+      "quantity": 1,
+      "subTotal": 20.0
+    },
+    {
+      "productId": "P102",
+      "name": "ไดโนเสาร์นอน สีเขียวเข้ม",
+      "pricePerUnit": 220.0,
+      "quantity": 1,
+      "subTotal": 220.0
+    },
+    {
+      "productId": "P103",
+      "name": "sada",
+      "pricePerUnit": 150.0,
+      "quantity": 1,
+      "subTotal": 150.0
+    }
+  ]
+}
+{
+  "orderId": "ORD-1774026032863",
+  "timestamp": "2026-03-21 00:00:32",
+  "cashier": "Niphas",
+  "subTotal": "639.00",
+  "discount": "0.00",
+  "vatAmount": "41.80",
+  "totalAmount": "639.00",
+  "cashTendered": "1000.00",
+  "change": "361.00",
+  "items": [
+    {
+      "productId": "P101",
+      "name": "Care Bears",
+      "pricePerUnit": 399.0,
+      "quantity": 1,
+      "subTotal": 399.0
+    },
+    {
+      "productId": "P102",
+      "name": "ไดโนเสาร์นอน สีเขียวเข้ม",
+      "pricePerUnit": 220.0,
+      "quantity": 1,
+      "subTotal": 220.0
+    },
+    {
+      "productId": "P201",
+      "name": "Moshi Pen",
+      "pricePerUnit": 20.0,
+      "quantity": 1,
+      "subTotal": 20.0
+    }
+  ]
+}
+{
+  "orderId": "ORD-1774026230973",
+  "timestamp": "2026-03-21 00:03:50",
+  "cashier": "Niphas",
+  "subTotal": "639.00",
+  "discount": "0.00",
+  "vatAmount": "41.80",
+  "totalAmount": "639.00",
+  "cashTendered": "700.00",
+  "change": "61.00",
+  "items": [
+    {
+      "productId": "P101",
+      "name": "Care Bears",
+      "pricePerUnit": 399.0,
+      "quantity": 1,
+      "subTotal": 399.0
+    },
+    {
+      "productId": "P201",
+      "name": "Moshi Pen",
+      "pricePerUnit": 20.0,
+      "quantity": 1,
+      "subTotal": 20.0
+    },
+    {
+      "productId": "P102",
+      "name": "ไดโนเสาร์นอน สีเขียวเข้ม",
+      "pricePerUnit": 220.0,
+      "quantity": 1,
+      "subTotal": 220.0
+    }
+  ]
+}
+{
+  "orderId": "ORD-1774061513088",
+  "timestamp": "2026-03-21 09:51:53",
+  "cashier": "Niphas",
+  "subTotal": "1500.00",
+  "discount": "150.00",
+  "vatAmount": "88.32",
+  "totalAmount": "1350.00",
+  "cashTendered": "1500.00",
+  "change": "150.00",
+  "items": [
+    {
+      "productId": "P103",
+      "name": "sada",
+      "pricePerUnit": 150.0,
+      "quantity": 10,
+      "subTotal": 1500.0
+    }
+  ]
+}
+{
+  "orderId": "ORD-1774061563012",
+  "timestamp": "2026-03-21 09:52:43",
+  "cashier": "Niphas",
+  "subTotal": "3000.00",
+  "discount": "300.00",
+  "vatAmount": "176.64",
+  "totalAmount": "2700.00",
+  "cashTendered": "3000.00",
+  "change": "300.00",
+  "items": [
+    {
+      "productId": "P103",
+      "name": "sada",
+      "pricePerUnit": 150.0,
+      "quantity": 20,
+      "subTotal": 3000.0
+    }
+  ]
+}
+{
+  "orderId": "ORD-1774061784008",
+  "timestamp": "2026-03-21 09:56:24",
+  "cashier": "Niphas",
+  "subTotal": "3000.00",
+  "discount": "300.00",
+  "vatAmount": "176.64",
+  "totalAmount": "2700.00",
+  "cashTendered": "3000.00",
+  "change": "300.00",
+  "items": [
+    {
+      "productId": "P103",
+      "name": "sada",
+      "pricePerUnit": 150.0,
+      "quantity": 20,
+      "subTotal": 3000.0
+    }
+  ]
+}
+{
+  "orderId": "ORD-1774063264611",
+  "timestamp": "2026-03-21 10:21:04",
+  "cashier": "Niphas",
+  "subTotal": "299.00",
+  "discount": "2.99",
+  "vatAmount": "19.37",
+  "totalAmount": "296.01",
+  "cashTendered": "296.01",
+  "change": "0.00",
+  "items": [
+    {
+      "productId": "P103",
+      "name": "sada",
+      "pricePerUnit": 150.0,
+      "quantity": 1,
+      "subTotal": 150.0
     },
     {
       "productId": "P201",

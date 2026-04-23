@@ -3,35 +3,56 @@
     "id": "P101",
     "name": "Care Bears",
     "price": 399.0,
-    "stock": 20,
+    "stock": 5,
     "unit": "ตัว"
   },
   {
     "id": "P201",
     "name": "Moshi Pen",
     "price": 20.0,
-    "stock": 39,
+    "stock": 10,
     "unit": "ด้าม"
   },
   {
     "id": "P301",
     "name": "Sunscreen",
     "price": 129.0,
-    "stock": 18,
+    "stock": 20,
     "unit": "หลอด"
   },
   {
     "id": "P102",
     "name": "ไดโนเสาร์นอน สีเขียวเข้ม",
-    "price": 240.0,
+    "price": 220.0,
     "stock": 20,
     "unit": "ตัว"
   },
   {
     "id": "P202",
     "name": "ปากกาหมึกซึม 0.5",
-    "price": 15.0,
+    "price": 20.0,
     "stock": 20,
     "unit": "ด้าม"
+  },
+  {
+    "id": "P302",
+    "name": "Eyecream",
+    "price": 199.0,
+    "stock": 20,
+    "unit": "ชิ้น"
+  },
+  {
+    "id": "P303",
+    "name": "Nam",
+    "price": 150.0,
+    "stock": 0,
+    "unit": "ชิ้น"
+  },
+  {
+    "id": "P103",
+    "name": "sada",
+    "price": 150.0,
+    "stock": 20,
+    "unit": "asda"
   }
 ]

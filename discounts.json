@@ -1,0 +1,30 @@
+[
+  {
+    "code": "DISC10",
+    "description": "ซื้อครบ 1000 บาท ลด 10%",
+    "minAmount": 1000.0,
+    "percentage": 10.0,
+    "expirationDate": "2026-12-31"
+  },
+  {
+    "code": "CODE20",
+    "description": "ลด20%เมื่อซื้อครบ2000",
+    "minAmount": 2000.0,
+    "percentage": 20.0,
+    "expirationDate": "2026-02-22"
+  },
+  {
+    "code": "ABC1",
+    "description": "ลด5%เมื่อซื้อครบ2000",
+    "minAmount": 2000.0,
+    "percentage": 5.0,
+    "expirationDate": "2026-03-22"
+  },
+  {
+    "code": "A555",
+    "description": "sadad",
+    "minAmount": 10.0,
+    "percentage": 1.0,
+    "expirationDate": "2026-12-20"
+  }
+]

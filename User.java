@@ -1,15 +1,16 @@
 public class User {
-    protected String userId;
-    protected String username;
-    protected String passwordHash;
-    protected String nickname;
-    protected String firstName;
-    protected String lastName;
-    protected String address;
-    protected String phoneNumber;
-    protected String role;
+    private String userId;
+    private String username;
+    private String passwordHash;
+    private String nickname;
+    private String firstName;
+    private String lastName;
+    private String address;
+    private String phoneNumber;
+    private String role;
 
-    public User(String userId, String username, String pass, String nick, String fName, String lName, String addr, String phone, String role) {
+    public User(String userId, String username, String pass, String nick, String fName, String lName, String addr,
+            String phone, String role) {
         this.userId = userId;
         this.username = username;
         this.passwordHash = pass;
@@ -26,18 +27,47 @@ public class User {
     }
 
     public void logout() {
-        System.out.println("[System] " + firstName + " has logged out.");
-    }
-
-    public void updateProfile() {
-        System.out.println("[System] Profile updated for: " + firstName);
+        // ลบ System.out (ให้ Main จัดการ output)
     }
 
     public void changePassword(String newPass) {
         this.passwordHash = newPass;
-        System.out.println("[System] Password changed successfully.");
+        // ลบ System.out (ให้ Main จัดการ output)
     }
 
-    public String getFirstName() { return firstName; }
-    public String getRole() { return role; }
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public String getRole() {
+        return role;
+    }
+
+    public String getUserId() {
+        return this.userId;
+    }
+
+    public String getUsername() {
+        return this.username;
+    }
+
+    public String getPassword() {
+        return this.passwordHash;
+    }
+
+    public String getNickname() {
+        return this.nickname;
+    }
+
+    public String getLastName() {
+        return this.lastName;
+    }
+
+    public String getAddress() {
+        return this.address;
+    }
+
+    public String getPhone() {
+        return this.phoneNumber;
+    }
 }

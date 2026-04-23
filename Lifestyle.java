@@ -8,6 +8,6 @@ public class Lifestyle extends Product {
 
     @Override
     public String getDetails() {
-        return name + " (Vol: " + volume + ")";
+        return this.getName() + " (Vol: " + volume + ")";
     }
 }

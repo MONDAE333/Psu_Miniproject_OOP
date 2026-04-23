@@ -10,6 +10,6 @@ public class Doll extends Product {
 
     @Override
     public String getDetails() {
-        return name + " (" + collectionName + " Size: " + size + ")";
+        return this.getName() + " (" + collectionName + " Size: " + size + ")";
     }
 }

@@ -1,0 +1,28 @@
+[
+  {
+    "role": "Manager",
+    "userId": "6810210428",
+    "username": "admin_kit",
+    "password": "1234",
+    "nickname": "Kit",
+    "firstName": "Kittapon",
+    "lastName": "W",
+    "address": "Songkhla",
+    "phone": "081",
+    "department": "IT",
+    "managementLevel": "StoreMgr",
+    "officePhone": "0200"
+  },
+  {
+    "role": "Cashier",
+    "userId": "6810210533",
+    "username": "cashier_n",
+    "password": "5678",
+    "nickname": "Niphas",
+    "firstName": "Niphas",
+    "lastName": "P",
+    "address": "Songkhla",
+    "phone": "082",
+    "counterNumber": 1
+  }
+]

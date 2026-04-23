@@ -7,7 +7,7 @@ public class Order {
     private Cashier cashier;
     private List<OrderItem> orderItems;
     private double totalAmount;
-    private Discount discountApplied;
+    private Discount discount; 
     private LocalDateTime timestamp;
     private String status;
     private double cashTendered; // เงินที่รับมา
@@ -32,6 +32,17 @@ public class Order {
     public LocalDateTime getTimestamp() { return timestamp; }
     
     public void addItemToCart(Product p, int qty) {
+        // 1. วนลูปเช็คว่ามีสินค้านี้อยู่ในตะกร้าแล้วหรือยัง
+        for (OrderItem item : orderItems) {
+            if (item.getProduct().getProductId().equals(p.getProductId())) {
+                // ถ้ามีอยู่แล้ว ให้นำจำนวนเดิมมาบวกกับจำนวนใหม่
+                int newQty = item.getQuantity() + qty;
+                item.setQuantity(newQty);
+                return; // สำคัญมาก! เจอแล้วบวกเสร็จ สั่ง return เพื่อออกจากเมธอดทันที
+            }
+        }
+        
+        // 2. ถ้าหลุดลูปมาถึงตรงนี้ แปลว่ายังไม่เคยมีสินค้านี้ในตะกร้า ค่อยสร้างบรรทัดใหม่
         orderItems.add(new OrderItem(p, qty));
     }
 
@@ -58,35 +69,42 @@ public class Order {
 
     public double calculateGrandTotal() {
         double subTotal = calculateTotal();
-        double afterDiscount = subTotal;
+        double discountAmount = 0.0;
         
-        if (discountApplied != null) {
-            afterDiscount -= discountApplied.getAmount();
-            if (afterDiscount < 0) afterDiscount = 0;
+        // ให้ Object Discount เป็นคนคำนวณยอดลดให้เอง (ตามหลัก OOP)
+        if (this.discount != null) {
+            discountAmount = this.discount.calculateDiscountAmount(subTotal);
         }
         
-        // คิด VAT 7% หลังหักส่วนลด
-        double vat = afterDiscount * 0.07;
-        return afterDiscount + vat;
+        double totalAfterDiscount = subTotal - discountAmount;
+        if (totalAfterDiscount < 0) totalAfterDiscount = 0;
+        
+        // ถ้ามี VAT 7% ให้คิดจากยอดที่ลดแล้ว (ขึ้นอยู่กับระบบของคุณ)
+        // สมมติว่าราคาสินค้ารวม VAT แล้ว ก็ return totalAfterDiscount ได้เลย
+        return totalAfterDiscount; 
     }
 
     public void printOrderSummary() {
-        System.out.println("รายการสินค้าในตะกร้า:");
+        if (orderItems.isEmpty()) {
+            System.out.println("  (ตะกร้าสินค้าว่างเปล่า)");
+            return;
+        }
         for (OrderItem item : orderItems) {
-            System.out.println("- [" + item.getProduct().getProductId() + "] " 
-                + item.getProduct().getName() + " x " + item.getQuantity() 
-                + " (" + item.getSubTotal() + " THB)");
+            System.out.println(String.format("  - [%s] %-20s x %2d  = %8.2f THB", 
+                item.getProduct().getProductId(), 
+                item.getProduct().getName(), 
+                item.getQuantity(), 
+                item.getSubTotal()));
         }
     }
 
-    public void applyDiscount(Discount d) {
-        this.discountApplied = d;
-        System.out.println("[System] Discount " + d.getCode() + " applied.");
+    public void applyDiscount(Discount discount) {
+        this.discount = discount;
     }
 
     public boolean validateStock() {
         for (OrderItem item : orderItems) {
-            if (item.getQuantity() > item.getProduct().stockQuantity) {
+            if (item.getQuantity() > item.getProduct().getStockQuantity()) {
                 System.out.println("[Error] Stock insufficient for " + item.getProduct().getName());
                 return false;
             }
@@ -101,16 +119,22 @@ public class Order {
     }
 
     public boolean processCheckout() {
-        if (validateStock()) {
-            deductStock();
-            this.status = "PAID";
-            return true;
-        }
-        return false;
+        this.status = "PAID";
+        return true;
     }
 
     public void cancelOrder() {
         this.status = "CANCELLED";
+    }
+
+    // ==========================================
+    // [เพิ่มใหม่] คืนสต๊อกสินค้าทั้งหมด (Restore Stock)
+    // หน้าที่: คืนสต๊อกที่จองแล้วกลับเข้าระบบ เมื่อยกเลิกออเดอร์หรือลบสินค้า
+    // ==========================================
+    public void restoreStock() {
+        for (OrderItem item : orderItems) {
+            item.getProduct().updateStock(item.getQuantity());
+        }
     }
 
     public String getOrderStatus() { return status; }
@@ -118,4 +142,5 @@ public class Order {
     public Cashier getCashier() { return cashier; }
     public List<OrderItem> getOrderItems() { return orderItems; }
     public double getTotalAmount() { return totalAmount; }
+    public Discount getDiscount() { return discount; }
 }
