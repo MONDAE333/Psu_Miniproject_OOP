@@ -88,19 +88,19 @@ java -cp src Main
   "products": [
     {
       "id": "001",
-      "name": "ข้าวหน้าหมู",
+      "name": "Care Bears",
       "price": 120.00,
       "quantity": 50
     },
     {
       "id": "002",
-      "name": "ข้าวหน้าไก่",
+      "name": "Moshi Pen",
       "price": 110.00,
       "quantity": 45
     },
     {
       "id": "003",
-      "name": "ชาเขียว",
+      "name": "Sunscreen",
       "price": 30.00,
       "quantity": 100
     }
@@ -118,7 +118,7 @@ java -cp src Main
       "items": [
         {
           "productId": "001",
-          "productName": "ข้าวหน้าหมู",
+          "productName": "Care Bears",
           "quantity": 2,
           "price": 120.00,
           "total": 240.00
@@ -190,12 +190,4 @@ FileManager.saveProducts("data/products.json", products);
 - 🗄️ ฐานข้อมูล SQL (Database Integration)
 - 🎨 GUI Interface (Graphical User Interface)
 
-## 📧 ติดต่อ
-
-หากมีคำถามหรือข้อเสนอแนะ สามารถติดต่อผ่าน:
-- GitHub Issues: [Issues Page](https://github.com/MONDAE333/Psu_Miniproject_OOP/issues)
-- GitHub Profile: [MONDAE333](https://github.com/MONDAE333)
-
 ---
-
-**Happy Coding! 🚀**
